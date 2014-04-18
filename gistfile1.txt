@@ -1,0 +1,131 @@
+{
+    /* Remap alt-8 to be a real star */
+    "~\U002A" = ("insertText:", "★");
+    /* The Compose Key - ctrl shift f13 - use KeyRemapForMacBook to bind to right alt */
+    "^$\UF710" = {
+        "\U0020" = {
+            "\U0020" = ("insertText:", "\U00A0"); /* Compose, SPACE, SPACE: NO-BREAK SPACE */
+        };
+        "\U0021" = {
+            "\U0021" = ("insertText:", "\U00A1"); /* Compose, EXCLAMATION MARK, EXCLAMATION MARK: INVERTED EXCLAMATION MARK */
+            "\U003F" = ("insertText:", "\U203D"); /* Compose, EXCLAMATION MARK, QUESTION MARK: INTERROBANG */
+        };
+        "\U0031" = {
+            "\U0031" = {
+                "\U0030" = ("insertText:", "\U2152"); /* Compose, DIGIT ONE, DIGIT ONE, DIGIT ZERO: VULGAR FRACTION ONE TENTH */
+            };
+            "\U0032" = ("insertText:", "\U00BD"); /* Compose, DIGIT ONE, DIGIT TWO: VULGAR FRACTION ONE HALF */
+            "\U0033" = ("insertText:", "\U2153"); /* Compose, DIGIT ONE, DIGIT THREE: VULGAR FRACTION ONE THIRD */
+            "\U0034" = ("insertText:", "\U00BC"); /* Compose, DIGIT ONE, DIGIT FOUR: VULGAR FRACTION ONE QUARTER */
+            "\U0035" = ("insertText:", "\U2155"); /* Compose, DIGIT ONE, DIGIT FIVE: VULGAR FRACTION ONE FIFTH */
+            "\U0036" = ("insertText:", "\U2159"); /* Compose, DIGIT ONE, DIGIT SIX: VULGAR FRACTION ONE SIXTH */
+            "\U0037" = ("insertText:", "\U2150"); /* Compose, DIGIT ONE, DIGIT SEVEN: VULGAR FRACTION ONE SEVENTH */
+            "\U0038" = ("insertText:", "\U215B"); /* Compose, DIGIT ONE, DIGIT EIGHT: VULGAR FRACTION ONE EIGHTH */
+            "\U0039" = ("insertText:", "\U2151"); /* Compose, DIGIT ONE, DIGIT NINE: VULGAR FRACTION ONE NINTH */
+            "\U0053" = ("insertText:", "\U00B9"); /* Compose, DIGIT ONE, LATIN CAPITAL LETTER S: SUPERSCRIPT ONE */
+            "\U005E" = ("insertText:", "\U00B9"); /* Compose, DIGIT ONE, CIRCUMFLEX ACCENT: SUPERSCRIPT ONE */
+            "\U0073" = ("insertText:", "\U00B9"); /* Compose, DIGIT ONE, LATIN SMALL LETTER S: SUPERSCRIPT ONE */
+        };
+        "\U0032" = {
+            "\U0033" = ("insertText:", "\U2154"); /* Compose, DIGIT TWO, DIGIT THREE: VULGAR FRACTION TWO THIRDS */
+            "\U0035" = ("insertText:", "\U2156"); /* Compose, DIGIT TWO, DIGIT FIVE: VULGAR FRACTION TWO FIFTHS */
+            "\U0053" = ("insertText:", "\U00B2"); /* Compose, DIGIT TWO, LATIN CAPITAL LETTER S: SUPERSCRIPT TWO */
+            "\U005E" = ("insertText:", "\U00B2"); /* Compose, DIGIT TWO, CIRCUMFLEX ACCENT: SUPERSCRIPT TWO */
+            "\U0073" = ("insertText:", "\U00B2"); /* Compose, DIGIT TWO, LATIN SMALL LETTER S: SUPERSCRIPT TWO */
+        };
+        "\U0033" = {
+            "\U0034" = ("insertText:", "\U00BE"); /* Compose, DIGIT THREE, DIGIT FOUR: VULGAR FRACTION THREE QUARTERS */
+            "\U0035" = ("insertText:", "\U2157"); /* Compose, DIGIT THREE, DIGIT FIVE: VULGAR FRACTION THREE FIFTHS */
+            "\U0038" = ("insertText:", "\U215C"); /* Compose, DIGIT THREE, DIGIT EIGHT: VULGAR FRACTION THREE EIGHTHS */
+            "\U0053" = ("insertText:", "\U00B3"); /* Compose, DIGIT THREE, LATIN CAPITAL LETTER S: SUPERSCRIPT THREE */
+            "\U005E" = ("insertText:", "\U00B3"); /* Compose, DIGIT THREE, CIRCUMFLEX ACCENT: SUPERSCRIPT THREE */
+            "\U0073" = ("insertText:", "\U00B3"); /* Compose, DIGIT THREE, LATIN SMALL LETTER S: SUPERSCRIPT THREE */
+        };
+        "\U0034" = {
+            "\U0035" = ("insertText:", "\U2158"); /* Compose, DIGIT FOUR, DIGIT FIVE: VULGAR FRACTION FOUR FIFTHS */
+        };
+        "\U0035" = {
+            "\U0036" = ("insertText:", "\U215A"); /* Compose, DIGIT FIVE, DIGIT SIX: VULGAR FRACTION FIVE SIXTHS */
+            "\U0038" = ("insertText:", "\U215D"); /* Compose, DIGIT FIVE, DIGIT EIGHT: VULGAR FRACTION FIVE EIGHTHS */
+        };
+        "\U0037" = {
+            "\U0038" = ("insertText:", "\U215E"); /* Compose, DIGIT SEVEN, DIGIT EIGHT: VULGAR FRACTION SEVEN EIGHTHS */
+        };
+        "\U003A" = {
+            "\U0028" = ("insertText:", "\U2639"); /* Compose, COLON, LEFT PARENTHESIS: WHITE FROWNING FACE */
+            "\U0029" = ("insertText:", "\U263A"); /* Compose, COLON, RIGHT PARENTHESIS: WHITE SMILING FACE */
+            "\U002D" = ("insertText:", "\U00F7"); /* Compose, COLON, HYPHEN-MINUS: DIVISION SIGN */
+        };
+        "\U003C" = {
+            "\U0022" = ("insertText:", "\U201C"); /* Compose, LESS-THAN SIGN, QUOTATION MARK: LEFT DOUBLE QUOTATION MARK */
+            "\U0027" = ("insertText:", "\U2018"); /* Compose, LESS-THAN SIGN, APOSTROPHE: LEFT SINGLE QUOTATION MARK */
+            "\U002D" = ("insertText:", "\U2190"); /* Compose, LESS-THAN SIGN, HYPHEN-MINUS: LEFTWARDS ARROW */
+            "\U0033" = ("insertText:", "\U2665"); /* Compose, LESS-THAN SIGN, DIGIT THREE: BLACK HEART SUIT */
+            "\U003C" = ("insertText:", "\U00AB"); /* Compose, LESS-THAN SIGN, LESS-THAN SIGN: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK */
+            "\U003D" = ("insertText:", "\U2264"); /* Compose, LESS-THAN SIGN, EQUALS SIGN: LESS-THAN OR EQUAL TO */
+        };
+        "\U003F" = {
+            "\U0021" = ("insertText:", "\U2E18"); /* Compose, QUESTION MARK, EXCLAMATION MARK: INVERTED INTERROBANG */
+            "\U003F" = ("insertText:", "\U00BF"); /* Compose, QUESTION MARK, QUESTION MARK: INVERTED QUESTION MARK */
+        };
+        "\U0043" = {
+            "\U0043" = {
+                "\U0043" = {
+                    "\U0050" = ("insertText:", "\U262D"); /* Compose, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER P: HAMMER AND SICKLE */
+                };
+            };
+            "\U0045" = ("insertText:", "\U20A0"); /* Compose, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER E: EURO-CURRENCY SIGN */
+            "\U004F" = ("insertText:", "\U00A9"); /* Compose, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER O: COPYRIGHT SIGN */
+            "\U006F" = ("insertText:", "\U00A9"); /* Compose, LATIN CAPITAL LETTER C, LATIN SMALL LETTER O: COPYRIGHT SIGN */
+            "\U0072" = ("insertText:", "\U20A2"); /* Compose, LATIN CAPITAL LETTER C, LATIN SMALL LETTER R: CRUZEIRO SIGN */
+            "\U007C" = ("insertText:", "\U00A2"); /* Compose, LATIN CAPITAL LETTER C, VERTICAL LINE: CENT SIGN */
+        };
+        "\U005F" = {
+            "\U0030" = ("insertText:", "\U2080"); /* Compose, LOW LINE, DIGIT ZERO: SUBSCRIPT ZERO */
+            "\U0031" = ("insertText:", "\U2081"); /* Compose, LOW LINE, DIGIT ONE: SUBSCRIPT ONE */
+            "\U0032" = ("insertText:", "\U2082"); /* Compose, LOW LINE, DIGIT TWO: SUBSCRIPT TWO */
+            "\U0033" = ("insertText:", "\U2083"); /* Compose, LOW LINE, DIGIT THREE: SUBSCRIPT THREE */
+            "\U0034" = ("insertText:", "\U2084"); /* Compose, LOW LINE, DIGIT FOUR: SUBSCRIPT FOUR */
+            "\U0035" = ("insertText:", "\U2085"); /* Compose, LOW LINE, DIGIT FIVE: SUBSCRIPT FIVE */
+            "\U0036" = ("insertText:", "\U2086"); /* Compose, LOW LINE, DIGIT SIX: SUBSCRIPT SIX */
+            "\U0037" = ("insertText:", "\U2087"); /* Compose, LOW LINE, DIGIT SEVEN: SUBSCRIPT SEVEN */
+            "\U0038" = ("insertText:", "\U2088"); /* Compose, LOW LINE, DIGIT EIGHT: SUBSCRIPT EIGHT */
+            "\U0039" = ("insertText:", "\U2089"); /* Compose, LOW LINE, DIGIT NINE: SUBSCRIPT NINE */
+        };
+        "f" = {
+            "l" = {
+                "i" = {
+                    "p" = ("insertText:", "(╯‵Д′)╯彡┻━┻"); /* Compose, flip */
+                };
+            };
+        };
+        "\U0070" = {
+            "\U0061" = {
+                "\U0072" = {
+                    "\U0074" = {
+                        "\U0079" = ("insertText:", "🎉"); /* Compose, party */
+                    };
+                };
+            };
+            "\U006F" = {
+                "\U006F" = ("insertText:", "💩");
+            };
+            "l" = {
+                "a" = {
+                    "n" = {
+                        e = ("insertText:", "✈"); /* Compose, plane */
+                    };
+                };
+            };
+        };
+        "\U0073" = {
+            "h" = {
+                "r" = {
+                    "u" = {
+                        "g" = ("insertText:", "¯\\_(ツ)_/¯");
+                    };
+                };
+            };
+        };
+    };
+}
