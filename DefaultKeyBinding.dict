@@ -1,5 +1,5 @@
 {
-    /* Remap alt-8 to be a real star */
+    /* Remap alt-(asterisk, shift-8) to be a real star */
     "~\U002A" = ("insertText:", "★");
     /* The Compose Key - ctrl shift f13 - use KeyRemapForMacBook to bind to right alt */
     "^$\UF710" = {
