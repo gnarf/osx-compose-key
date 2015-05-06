@@ -1,0 +1,7 @@
+<root>
+<item>
+<name>Send Shift-Ctrl-F13 for Right Option</name>
+<identifier>private.send_shift_ctrl_f13_for_ropt</identifier>
+<autogen>--KeyToKey-- KeyCode::OPTION_R,                          KeyCode::F13, ModifierFlag::SHIFT_L                                      | ModifierFlag::CONTROL_L    </autogen>
+</item>
+</root>
