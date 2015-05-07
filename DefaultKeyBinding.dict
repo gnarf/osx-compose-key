@@ -1,108 +1,131 @@
 {
-    /* Remap alt-(asterisk, shift-8) to be a real star */
-    "~*" = ("insertText:", "★");
-    /* The Compose Key - ctrl shift f13 - use KeyRemapForMacBook to bind to right alt */
+    /* The Compose Key: Shift-Ctrl-F13 - use Karabiner to bind to Right-Option
+       Reference:
+         http://lolengine.net/blog/2012/06/17/compose-key-on-os-x
+         http://heisencoder.net/2008/04/fixing-up-mac-key-bindings-for-windows.html
+         https://gist.github.com/gnarf/0d29c05b189a51894399
+         http://osxnotes.net/keybindings.html
+    */
     "^$\UF710" = {
+        "\UF700" = ("insertText:", "↑"); /* Up arrow */
+        "\UF701" = ("insertText:", "↓"); /* Down arrow */
+        "\UF702" = ("insertText:", "←"); /* Left arrow */
+        "\UF703" = ("insertText:", "→"); /* Right arrow */
+        "$\UF700" = ("insertText:", "⇈"); /* (Shift) Double-up arrow */
+        "$\UF701" = ("insertText:", "⇊"); /* (Shift) Double-down arrow */
+        "$\UF702" = ("insertText:", "⇇"); /* (Shift) Double-left arrow */
+        "$\UF703" = ("insertText:", "⇉"); /* (Shift) Double-right arrow */
+        "~\UF700" = ("insertText:", "⇡"); /* (Opt) Dotted-up arrow */
+        "~\UF701" = ("insertText:", "⇣"); /* (Opt) Dotted-down arrow */
+        "~\UF702" = ("insertText:", "⇠"); /* (Opt) Dotted-left arrow */
+        "~\UF703" = ("insertText:", "⇢"); /* (Opt) Dotted-right arrow */
+        "*" = ("insertText:", "★");
         " " = {
-            " " = ("insertText:", " "); /* Compose, SPACE, SPACE: NO-BREAK SPACE */
+            " " = ("insertText:", "\U00A0"); /* Non-breaking space */
+        };
+        "+" = {
+            "1" = ("insertText:", "👍");
+        };
+        "-" = {
+            "1" = ("insertText:", "👎");
         };
         "!" = {
-            "!" = ("insertText:", "¡"); /* Compose, EXCLAMATION MARK, EXCLAMATION MARK: INVERTED EXCLAMATION MARK */
-            "?" = ("insertText:", "‽"); /* Compose, EXCLAMATION MARK, QUESTION MARK: INTERROBANG */
+            "?" = ("insertText:", "‽");
+        };
+        "?" = {
+            "!" = ("insertText:", "⸘");
         };
         "1" = {
             "1" = {
-                "0" = ("insertText:", "⅒"); /* Compose, DIGIT ONE, DIGIT ONE, DIGIT ZERO: VULGAR FRACTION ONE TENTH */
+                "0" = ("insertText:", "⅒");
             };
-            "2" = ("insertText:", "½"); /* Compose, DIGIT ONE, DIGIT TWO: VULGAR FRACTION ONE HALF */
-            "3" = ("insertText:", "⅓"); /* Compose, DIGIT ONE, DIGIT THREE: VULGAR FRACTION ONE THIRD */
-            "4" = ("insertText:", "¼"); /* Compose, DIGIT ONE, DIGIT FOUR: VULGAR FRACTION ONE QUARTER */
-            "5" = ("insertText:", "⅕"); /* Compose, DIGIT ONE, DIGIT FIVE: VULGAR FRACTION ONE FIFTH */
-            "6" = ("insertText:", "⅙"); /* Compose, DIGIT ONE, DIGIT SIX: VULGAR FRACTION ONE SIXTH */
-            "7" = ("insertText:", "⅐"); /* Compose, DIGIT ONE, DIGIT SEVEN: VULGAR FRACTION ONE SEVENTH */
-            "8" = ("insertText:", "⅛"); /* Compose, DIGIT ONE, DIGIT EIGHT: VULGAR FRACTION ONE EIGHTH */
-            "9" = ("insertText:", "⅑"); /* Compose, DIGIT ONE, DIGIT NINE: VULGAR FRACTION ONE NINTH */
-            "S" = ("insertText:", "¹"); /* Compose, DIGIT ONE, LATIN CAPITAL LETTER S: SUPERSCRIPT ONE */
-            "s" = ("insertText:", "¹"); /* Compose, DIGIT ONE, LATIN SMALL LETTER S: SUPERSCRIPT ONE */
+            "2" = ("insertText:", "½");
+            "3" = ("insertText:", "⅓");
+            "4" = ("insertText:", "¼");
+            "5" = ("insertText:", "⅕");
+            "6" = ("insertText:", "⅙");
+            "7" = ("insertText:", "⅐");
+            "8" = ("insertText:", "⅛");
+            "9" = ("insertText:", "⅑");
+            "s" = ("insertText:", "¹");
         };
         "2" = {
-            "3" = ("insertText:", "⅔"); /* Compose, DIGIT TWO, DIGIT THREE: VULGAR FRACTION TWO THIRDS */
-            "5" = ("insertText:", "⅖"); /* Compose, DIGIT TWO, DIGIT FIVE: VULGAR FRACTION TWO FIFTHS */
-            "S" = ("insertText:", "²"); /* Compose, DIGIT TWO, LATIN CAPITAL LETTER S: SUPERSCRIPT TWO */
-            "s" = ("insertText:", "²"); /* Compose, DIGIT TWO, LATIN SMALL LETTER S: SUPERSCRIPT TWO */
+            "3" = ("insertText:", "⅔");
+            "5" = ("insertText:", "⅖");
+            "s" = ("insertText:", "²");
         };
         "3" = {
-            "4" = ("insertText:", "¾"); /* Compose, DIGIT THREE, DIGIT FOUR: VULGAR FRACTION THREE QUARTERS */
-            "5" = ("insertText:", "⅗"); /* Compose, DIGIT THREE, DIGIT FIVE: VULGAR FRACTION THREE FIFTHS */
-            "8" = ("insertText:", "⅜"); /* Compose, DIGIT THREE, DIGIT EIGHT: VULGAR FRACTION THREE EIGHTHS */
-            "S" = ("insertText:", "³"); /* Compose, DIGIT THREE, LATIN CAPITAL LETTER S: SUPERSCRIPT THREE */
-            "s" = ("insertText:", "³"); /* Compose, DIGIT THREE, LATIN SMALL LETTER S: SUPERSCRIPT THREE */
+            "4" = ("insertText:", "¾");
+            "5" = ("insertText:", "⅗");
+            "8" = ("insertText:", "⅜");
+            "s" = ("insertText:", "³");
         };
         "4" = {
-            "5" = ("insertText:", "⅘"); /* Compose, DIGIT FOUR, DIGIT FIVE: VULGAR FRACTION FOUR FIFTHS */
+            "5" = ("insertText:", "⅘");
         };
         "5" = {
-            "6" = ("insertText:", "⅚"); /* Compose, DIGIT FIVE, DIGIT SIX: VULGAR FRACTION FIVE SIXTHS */
-            "8" = ("insertText:", "⅝"); /* Compose, DIGIT FIVE, DIGIT EIGHT: VULGAR FRACTION FIVE EIGHTHS */
+            "6" = ("insertText:", "⅚");
+            "8" = ("insertText:", "⅝");
         };
         "7" = {
-            "8" = ("insertText:", "⅞"); /* Compose, DIGIT SEVEN, DIGIT EIGHT: VULGAR FRACTION SEVEN EIGHTHS */
+            "8" = ("insertText:", "⅞");
         };
         ":" = {
-            "(" = ("insertText:", "☹"); /* Compose, COLON, LEFT PARENTHESIS: WHITE FROWNING FACE */
-            ")" = ("insertText:", "☺"); /* Compose, COLON, RIGHT PARENTHESIS: WHITE SMILING FACE */
-            "-" = ("insertText:", "÷"); /* Compose, COLON, HYPHEN-MINUS: DIVISION SIGN */
+            "(" = ("insertText:", "☹"); /* Frowny face */
+            ")" = ("insertText:", "☺"); /* Smiley face */
         };
         "<" = {
-            "\"" = ("insertText:", "“"); /* Compose, LESS-THAN SIGN, QUOTATION MARK: LEFT DOUBLE QUOTATION MARK */
-            "'" = ("insertText:", "‘"); /* Compose, LESS-THAN SIGN, APOSTROPHE: LEFT SINGLE QUOTATION MARK */
-            "-" = ("insertText:", "←"); /* Compose, LESS-THAN SIGN, HYPHEN-MINUS: LEFTWARDS ARROW */
-            "3" = ("insertText:", "♥"); /* Compose, LESS-THAN SIGN, DIGIT THREE: BLACK HEART SUIT */
-            "<" = ("insertText:", "«"); /* Compose, LESS-THAN SIGN, LESS-THAN SIGN: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK */
-            "=" = ("insertText:", "≤"); /* Compose, LESS-THAN SIGN, EQUALS SIGN: LESS-THAN OR EQUAL TO */
+            "\"" = ("insertText:", "“");
+            "'" = ("insertText:", "‘");
+            "3" = ("insertText:", "♥"); /* Heart */
+            "<" = ("insertText:", "«");
+            "=" = ("insertText:", "≤");
         };
         ">" = {
-            "\"" = ("insertText:", "”"); /* Compose, GREATER-THAN SIGN, QUOTATION MARK: RIGHT DOUBLE QUOTATION MARK */
-            "'" = ("insertText:", "’"); /* Compose, GREATER-THAN SIGN, APOSTROPHE: RIGHT SINGLE QUOTATION MARK */
-            "-" = ("insertText:", "→"); /* Compose, GREATER-THAN SIGN, HYPHEN-MINUS: RIGHTWARDS ARROW */
-            "<" = ("insertText:", "»"); /* Compose, GREATER-THAN SIGN, GREATER-THAN SIGN: RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK */
-            "=" = ("insertText:", "≥"); /* Compose, GREATER-THAN SIGN, EQUALS SIGN: GREATER-THAN OR EQUAL TO */
-        };
-        "?" = {
-            "!" = ("insertText:", "⸘"); /* Compose, QUESTION MARK, EXCLAMATION MARK: INVERTED INTERROBANG */
-            "?" = ("insertText:", "¿"); /* Compose, QUESTION MARK, QUESTION MARK: INVERTED QUESTION MARK */
-        };
-        "C" = {
-            "E" = ("insertText:", "₠"); /* Compose, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER E: EURO-CURRENCY SIGN */
-            "O" = ("insertText:", "©"); /* Compose, LATIN CAPITAL LETTER C, LATIN CAPITAL LETTER O: COPYRIGHT SIGN */
-            "o" = ("insertText:", "©"); /* Compose, LATIN CAPITAL LETTER C, LATIN SMALL LETTER O: COPYRIGHT SIGN */
-            "r" = ("insertText:", "₢"); /* Compose, LATIN CAPITAL LETTER C, LATIN SMALL LETTER R: CRUZEIRO SIGN */
-            "|" = ("insertText:", "¢"); /* Compose, LATIN CAPITAL LETTER C, VERTICAL LINE: CENT SIGN */
+            "\"" = ("insertText:", "”");
+            "'" = ("insertText:", "’");
+            ">" = ("insertText:", "»");
+            "=" = ("insertText:", "≥");
         };
         "_" = {
-            "0" = ("insertText:", "₀"); /* Compose, LOW LINE, DIGIT ZERO: SUBSCRIPT ZERO */
-            "1" = ("insertText:", "₁"); /* Compose, LOW LINE, DIGIT ONE: SUBSCRIPT ONE */
-            "2" = ("insertText:", "₂"); /* Compose, LOW LINE, DIGIT TWO: SUBSCRIPT TWO */
-            "3" = ("insertText:", "₃"); /* Compose, LOW LINE, DIGIT THREE: SUBSCRIPT THREE */
-            "4" = ("insertText:", "₄"); /* Compose, LOW LINE, DIGIT FOUR: SUBSCRIPT FOUR */
-            "5" = ("insertText:", "₅"); /* Compose, LOW LINE, DIGIT FIVE: SUBSCRIPT FIVE */
-            "6" = ("insertText:", "₆"); /* Compose, LOW LINE, DIGIT SIX: SUBSCRIPT SIX */
-            "7" = ("insertText:", "₇"); /* Compose, LOW LINE, DIGIT SEVEN: SUBSCRIPT SEVEN */
-            "8" = ("insertText:", "₈"); /* Compose, LOW LINE, DIGIT EIGHT: SUBSCRIPT EIGHT */
-            "9" = ("insertText:", "₉"); /* Compose, LOW LINE, DIGIT NINE: SUBSCRIPT NINE */
+            "0" = ("insertText:", "₀"); /* Subscript 0 */
+            "1" = ("insertText:", "₁"); /* Subscript 1 */
+            "2" = ("insertText:", "₂"); /* Subscript 2 */
+            "3" = ("insertText:", "₃"); /* Subscript 3 */
+            "4" = ("insertText:", "₄"); /* Subscript 4 */
+            "5" = ("insertText:", "₅"); /* Subscript 5 */
+            "6" = ("insertText:", "₆"); /* Subscript 6 */
+            "7" = ("insertText:", "₇"); /* Subscript 7 */
+            "8" = ("insertText:", "₈"); /* Subscript 8 */
+            "9" = ("insertText:", "₉"); /* Subscript 9 */
         };
         "f" = {
             "l" = {
                 "i" = {
-                    "p" = ("insertText:", "(╯‵Д′)╯彡┻━┻"); /* Compose, flip */
+                    "p" = ("insertText:", "(╯‵Д′)╯彡┻━┻");
                 };
             };
+        };
+        "k" = {
+          "e" = {
+            "y" = {
+              " " = ("insertText:", "␣"); /* Space */
+              "s" = ("insertText:", "⇧"); /* Shift */
+              "o" = ("insertText:", "⌥"); /* Option */
+              "c" = ("insertText:", "⌘"); /* Cmd */
+              "r" = ("insertText:", "⏎"); /* Return */
+              "e" = ("insertText:", "⎋"); /* Escape */
+              "b" = ("insertText:", "⌫"); /* Backspace */
+              "d" = ("insertText:", "⌦"); /* Delete */
+              "t" = ("insertText:", "⇥"); /* Tab */
+            };
+          };
         };
         "p" = {
             "a" = {
                 "r" = {
                     "t" = {
-                        "y" = ("insertText:", "🎉"); /* Compose, party */
+                        "y" = ("insertText:", "🎉");
                     };
                 };
             };
@@ -112,7 +135,7 @@
             "l" = {
                 "a" = {
                     "n" = {
-                        e = ("insertText:", "✈"); /* Compose, plane */
+                        e = ("insertText:", "✈");
                     };
                 };
             };
