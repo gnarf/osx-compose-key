@@ -7,18 +7,14 @@
          http://osxnotes.net/keybindings.html
     */
     "^$\UF710" = {
-        "\UF700" = ("insertText:", "↑"); /* Up arrow */
-        "\UF701" = ("insertText:", "↓"); /* Down arrow */
-        "\UF702" = ("insertText:", "←"); /* Left arrow */
-        "\UF703" = ("insertText:", "→"); /* Right arrow */
-        "$\UF700" = ("insertText:", "⇈"); /* (Shift) Double-up arrow */
-        "$\UF701" = ("insertText:", "⇊"); /* (Shift) Double-down arrow */
-        "$\UF702" = ("insertText:", "⇇"); /* (Shift) Double-left arrow */
-        "$\UF703" = ("insertText:", "⇉"); /* (Shift) Double-right arrow */
-        "~\UF700" = ("insertText:", "⇡"); /* (Opt) Dotted-up arrow */
-        "~\UF701" = ("insertText:", "⇣"); /* (Opt) Dotted-down arrow */
-        "~\UF702" = ("insertText:", "⇠"); /* (Opt) Dotted-left arrow */
-        "~\UF703" = ("insertText:", "⇢"); /* (Opt) Dotted-right arrow */
+        "$\UF700" = ("insertText:", "↑"); /* (Shift) Up arrow */
+        "$\UF701" = ("insertText:", "↓"); /* (Shift) Down arrow */
+        "$\UF702" = ("insertText:", "←"); /* (Shift) Left arrow */
+        "$\UF703" = ("insertText:", "→"); /* (Shift) Right arrow */
+        "$~\UF700" = ("insertText:", "⇈"); /* (Shift-opt) Double-up arrow */
+        "$~\UF701" = ("insertText:", "⇊"); /* (Shift-opt) Double-down arrow */
+        "$~\UF702" = ("insertText:", "⇇"); /* (Shift-opt) Double-left arrow */
+        "$~\UF703" = ("insertText:", "⇉"); /* (Shift-opt) Double-right arrow */
         "*" = ("insertText:", "★");
         " " = {
             " " = ("insertText:", "\U00A0"); /* Non-breaking space */
