@@ -1,12 +1,13 @@
 {
-    /* The Compose Key: Shift-Ctrl-F13 - use Karabiner to bind to Right-Option
+    /* The Compose Key: § - use Karabiner to bind to Right-Option
        Reference:
+         http://github.com/gnarf/osx-compose-key
          http://lolengine.net/blog/2012/06/17/compose-key-on-os-x
          http://heisencoder.net/2008/04/fixing-up-mac-key-bindings-for-windows.html
          https://gist.github.com/gnarf/0d29c05b189a51894399
          http://osxnotes.net/keybindings.html
     */
-    "^$\UF710" = {
+    "§" = {
         "$\UF700" = ("insertText:", "↑"); /* (Shift) Up arrow */
         "$\UF701" = ("insertText:", "↓"); /* (Shift) Down arrow */
         "$\UF702" = ("insertText:", "←"); /* (Shift) Left arrow */
