@@ -6,6 +6,14 @@ if [[ "$(type -P brew)" && "$(brew ls --versions brew-cask)" ]]; then
     echo "Installing Karabiner..."
     brew cask install karabiner
   fi
+else
+  echo "Homebrew and Homebrew Cask not detected. Not installing Karabiner."
+  echo "If you intended for this script to install Karabiner, install Homebrew"
+  echo "and Homebrew Cask:"
+  echo
+  echo "http://brew.sh/"
+  echo "http://caskroom.io/"
+  echo
 fi
 
 # Copy Karabiner settings.
@@ -18,4 +26,5 @@ mkdir -p ~/Library/KeyBindings
 echo "Copying DefaultKeyBinding.dict..."
 cp DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
+echo
 echo "Done."
