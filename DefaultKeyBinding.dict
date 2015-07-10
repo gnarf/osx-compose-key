@@ -96,6 +96,13 @@
             "8" = ("insertText:", "₈"); /* Subscript 8 */
             "9" = ("insertText:", "₉"); /* Subscript 9 */
         };
+        "b" = {
+            "u" = {
+                "m" = {
+                    "p" = ("insertText:", "👊");
+                };
+            };
+        };
         "c" = {
             "l" = {
                 "o" = {
