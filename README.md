@@ -21,7 +21,7 @@ mkdir -p ~/Library/KeyBindings
 curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/DefaultKeyBinding.dict' -o ~/Library/KeyBindings/DefaultKeyBinding.dict
 ```
 
-In Karabiner, enable "Send § for Right Option":
+In Karabiner, enable "Send § for Right Option" (or right command if you use right alt):
 
 ![screenshot](http://gnarf.net/karabiner.png)
 
