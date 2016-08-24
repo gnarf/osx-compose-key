@@ -79,6 +79,7 @@
             "3" = ("insertText:", "♥"); /* Heart */
             "<" = ("insertText:", "«");
             "=" = ("insertText:", "≤");
+            "-" = ("insertText:", "←");
         };
         ">" = {
             "\"" = ("insertText:", "”");
