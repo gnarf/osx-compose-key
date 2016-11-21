@@ -18,21 +18,12 @@ git clone https://github.com/gnarf/osx-compose-key.git
 
 You can also install it manually, if you prefer:
 
-## For OS X 10.11 and below
-
-Install [Karabiner](https://pqrs.org/osx/karabiner/) for remapping keys support, and download these files into the correct places:
+## For all versions of OS X
 
 ```bash
-brew cask install karabiner
-mkdir -p ~/Library/Application\ Support/Karabiner
-curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/private.xml' -o ~/Library/Application\ Support/Karabiner/private.xml
+mkdir -p ~/Library/KeyBindings
+curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/DefaultKeyBinding.dict' -o ~/Library/KeyBindings/DefaultKeyBinding.dict
 ```
-
-Continue with instructions for all versions of OS X, below.
-
-In Karabiner, enable "Send § for Right Option" (or right command if you use right alt):
-
-![screenshot](settings.png)
 
 Note: changes to `~/Library/KeyBindings/DefaultKeyBinding.dict` require quitting and restarting any apps you want to test them in.
 
@@ -50,11 +41,18 @@ In Karabiner-Elements under the Simple Modifications tab, click "Add item". Set 
 
 ![screenshot](/settings-elements.png)
 
-## For all versions of OS X
+## For OS X 10.11 and below
+
+Install [Karabiner](https://pqrs.org/osx/karabiner/) for remapping keys support, and download these files into the correct places:
 
 ```bash
-mkdir -p ~/Library/KeyBindings
-curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/DefaultKeyBinding.dict' -o ~/Library/KeyBindings/DefaultKeyBinding.dict
+brew cask install karabiner
+mkdir -p ~/Library/Application\ Support/Karabiner
+curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/private.xml' -o ~/Library/Application\ Support/Karabiner/private.xml
 ```
+
+In Karabiner, enable "Send § for Right Option" (or right command if you use right alt):
+
+![screenshot](settings.png)
 
 Note: changes to `~/Library/KeyBindings/DefaultKeyBinding.dict` require quitting and restarting any apps you want to test them in.
