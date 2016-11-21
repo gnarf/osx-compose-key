@@ -11,6 +11,13 @@ You can read more about it on the [blog that inspired this setup](http://lolengi
 
 # Setting up a "Compose Key" in Mac OS X
 
+```bash
+git clone https://github.com/gnarf/osx-compose-key.git
+./install.sh
+```
+
+You can also install it manually, if you prefer:
+
 ## For OS X 10.11 and below
 
 Install [Karabiner](https://pqrs.org/osx/karabiner/) for remapping keys support, and download these files into the correct places:
@@ -25,7 +32,7 @@ Continue with instructions for all versions of OS X, below.
 
 In Karabiner, enable "Send § for Right Option" (or right command if you use right alt):
 
-![screenshot](http://gnarf.net/karabiner.png)
+![screenshot](settings.png)
 
 Note: changes to `~/Library/KeyBindings/DefaultKeyBinding.dict` require quitting and restarting any apps you want to test them in.
 
