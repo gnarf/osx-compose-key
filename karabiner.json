@@ -1,0 +1,11 @@
+{
+    "profiles": [
+        {
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": {
+                "right_option": "non_us_backslash"
+            }
+        }
+    ]
+}
