@@ -14,15 +14,15 @@ You can read more about it on the [blog that inspired this setup](http://lolengi
 Install [Karabiner](https://pqrs.org/osx/karabiner/) for remapping keys support, and download these files into the correct places:
 
 ```bash
-brew cask install karabiner
-mkdir -p ~/Library/Application\ Support/Karabiner
-curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/private.xml' -o ~/Library/Application\ Support/Karabiner/private.xml
+brew cask install karabiner-elements
+mkdir -p ~/.karabiner.d/configuration
+curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/karabiner.json' -o ~/.karabiner.d/configuration/karabiner.json
 mkdir -p ~/Library/KeyBindings
 curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/DefaultKeyBinding.dict' -o ~/Library/KeyBindings/DefaultKeyBinding.dict
 ```
 
-In Karabiner, enable "Send § for Right Option" (or right command if you use right alt):
+In Karabiner-Elements under the Simple Modifications tab, click "Add item". Set the "From key" to "right_option" (or "right_command" if you use right alt) and "To key" to "non_us_backslash":
 
-![screenshot](http://gnarf.net/karabiner.png)
+![screenshot](/settings.png)
 
 Note: changes to `~/Library/KeyBindings/DefaultKeyBinding.dict` require quitting and restarting any apps you want to test them in.
