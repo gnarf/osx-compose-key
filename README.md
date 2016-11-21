@@ -11,18 +11,43 @@ You can read more about it on the [blog that inspired this setup](http://lolengi
 
 # Setting up a "Compose Key" in Mac OS X
 
+## For OS X 10.11 and below
+
 Install [Karabiner](https://pqrs.org/osx/karabiner/) for remapping keys support, and download these files into the correct places:
+
+```bash
+brew cask install karabiner
+mkdir -p ~/Library/Application\ Support/Karabiner
+curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/private.xml' -o ~/Library/Application\ Support/Karabiner/private.xml
+```
+
+Continue with instructions for all versions of OS X, below.
+
+In Karabiner, enable "Send § for Right Option" (or right command if you use right alt):
+
+![screenshot](http://gnarf.net/karabiner.png)
+
+Note: changes to `~/Library/KeyBindings/DefaultKeyBinding.dict` require quitting and restarting any apps you want to test them in.
+
+## For OS X 10.12 Sierra
+
+Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements) for remapping keys support, and download these files into the correct places:
 
 ```bash
 brew cask install karabiner-elements
 mkdir -p ~/.karabiner.d/configuration
 curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/karabiner.json' -o ~/.karabiner.d/configuration/karabiner.json
-mkdir -p ~/Library/KeyBindings
-curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/DefaultKeyBinding.dict' -o ~/Library/KeyBindings/DefaultKeyBinding.dict
 ```
 
 In Karabiner-Elements under the Simple Modifications tab, click "Add item". Set the "From key" to "right_option" (or "right_command" if you use right alt) and "To key" to "non_us_backslash":
 
-![screenshot](/settings.png)
+![screenshot](/settings-elements.png)
+
+## For all versions of OS X
+
+```bash
+mkdir -p ~/Library/KeyBindings
+curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/DefaultKeyBinding.dict' -o ~/Library/KeyBindings/DefaultKeyBinding.dict
+```
 
 Note: changes to `~/Library/KeyBindings/DefaultKeyBinding.dict` require quitting and restarting any apps you want to test them in.
