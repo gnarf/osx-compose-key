@@ -33,8 +33,8 @@ Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements) for r
 
 ```bash
 brew cask install karabiner-elements
-mkdir -p ~/.karabiner.d/configuration
-curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/karabiner.json' -o ~/.karabiner.d/configuration/karabiner.json
+mkdir -p ~/.config/karabiner
+curl 'https://raw.githubusercontent.com/gnarf/osx-compose-key/master/karabiner.json' -o ~/.config/karabiner/karabiner.json
 ```
 
 In Karabiner-Elements under the Simple Modifications tab, click "Add item". Set the "From key" to "right_option" (or "right_command" if you use right alt) and "To key" to "non_us_backslash":
