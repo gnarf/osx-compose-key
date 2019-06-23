@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OSX_VERSION="$(sw_vers -productVersion | sed -E "s/^[0-9]+\.([0-9]+)/\\1/")"
+OSX_VERSION="$(sw_vers -productVersion | sed -E "s/^[0-9]+\.([0-9]+)(\..+)?/\\1/")"
 
 # Install Karabiner if it isn't installed, but homebrew and cask are.
 if [[ "$(type -P brew)" && "$(brew tap | awk '/cask/')" ]]; then
