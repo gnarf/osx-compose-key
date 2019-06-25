@@ -25,7 +25,7 @@ fi
 
 # Copy Karabiner settings.
 echo "Copying Karabiner settings..."
-if [[ $OSX_VERSION -ge 12 ]]; then
+if (( $(echo "$OSX_VERSION > 12" | bc -l) )); then
   mkdir -p ~/.karabiner.d/configuration
   cp karabiner.json ~/.karabiner.d/configuration/karabiner.json
 else
