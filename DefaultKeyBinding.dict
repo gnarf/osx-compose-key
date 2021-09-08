@@ -99,20 +99,138 @@
             "8" = ("insertText:", "₈"); /* Subscript 8 */
             "9" = ("insertText:", "₉"); /* Subscript 9 */
         };
+		"a" = {
+          "'" = ("insertText:", "á");
+          "`" = ("insertText:", "à");
+          "e" = ("insertText:", "æ");
+        };
+        "A" = {
+          "'" = ("insertText:", "Á");
+          "`" = ("insertText:", "À");
+          "e" = ("insertText:", "Æ");
+        };
+        "e" = {
+          "'" = ("insertText:", "é");
+          "`" = ("insertText:", "è");
+          "=" = ("insertText:", "€");
+        };
+        "E" = {
+          "'" = ("insertText:", "É");
+          "`" = ("insertText:", "È");
+        };
+        "i" = {
+          "'" = ("insertText:", "í");
+          "`" = ("insertText:", "ì");
+        };
+        "I" = {
+          "'" = ("insertText:", "Í");
+          "`" = ("insertText:", "Ì");
+        };
+        "o" = {
+          "'" = ("insertText:", "ó");
+          "`" = ("insertText:", "ò");
+        };
+        "O" = {
+          "'" = ("insertText:", "Ó");
+          "`" = ("insertText:", "Ò");
+        };
+        "u" = {
+          "'" = ("insertText:", "ú");
+          "`" = ("insertText:", "ù");
+        };
+        "U" = {
+          "'" = ("insertText:", "Ú");
+          "`" = ("insertText:", "Ù");
+        };
+        "'" = {
+            "a" = ("insertText:", "á");
+            "A" = ("insertText:", "Á");
+            "e" = ("insertText:", "é");
+            "E" = ("insertText:", "É");
+            "i" = ("insertText:", "í");
+            "I" = ("insertText:", "Í");
+            "o" = ("insertText:", "ó");
+            "O" = ("insertText:", "Ó");
+            "u" = ("insertText:", "ú");
+            "U" = ("insertText:", "Ú");
+            "y" = ("insertText:", "ý");
+            "Y" = ("insertText:", "Ý");
+        };
+        "`" = {
+            "a" = ("insertText:", "à");
+            "A" = ("insertText:", "À");
+            "e" = ("insertText:", "è");
+            "E" = ("insertText:", "È");
+            "i" = ("insertText:", "ì");
+            "I" = ("insertText:", "Ì");
+            "o" = ("insertText:", "ò");
+            "O" = ("insertText:", "Ò");
+            "u" = ("insertText:", "ù");
+            "U" = ("insertText:", "Ù");
+            "y" = ("insertText:", "ỳ");
+            "Y" = ("insertText:", "Ỳ");
+        };
+        "d" = {
+            "h" = ("insertText:", "ð");
+        };
+        "D" = {
+            "h" = ("insertText:", "Ð");
+        };
+        "t" = {
+            "h" = ("insertText:", "þ");
+        };
+        "T" = {
+            "h" = ("insertText:", "Þ");
+        };
+        '"' = {
+            "a" = ("insertText:", "ä");
+            "A" = ("insertText:", "Ä");
+            "e" = ("insertText:", "ë");
+            "E" = ("insertText:", "Ë");
+            "i" = ("insertText:", "ï");
+            "I" = ("insertText:", "Ï");
+            "o" = ("insertText:", "ö");
+            "O" = ("insertText:", "Ö");
+            "u" = ("insertText:", "ü");
+            "U" = ("insertText:", "Ü");
+            "y" = ("insertText:", "ÿ");
+            "Y" = ("insertText:", "Ÿ");
+        };
+        "/" = {
+            "o" = ("insertText:", "ø");
+            "O" = ("insertText:", "Ø");
+        };
+        "o" = {
+            "a" = ("insertText:", "å");
+            "A" = ("insertText:", "Å");
+            "e" = ("insertText:", "œ");
+            "E" = ("insertText:", "Œ");
+        };
+        "s" = {
+            "s" = ("insertText:", "ß");
+        };
+        "," = {
+            "c" = ("insertText:", "ç");
+            "C" = ("insertText:", "Ç");
+        };
+        "-" = {
+            "n" = ("insertText:", "ñ");
+            "N" = ("insertText:", "Ñ");
+        };
         "b" = {
             "u" = {
                 "m" = {
                     "p" = ("insertText:", "👊");
                 };
-				"r" = {
-					"r" = {
-						"i" = {
-							"t" = {
-								"o" = ("insertText:", "🌯");
-							};
-						};
+		"r" = {
+			"r" = {
+				"i" = {
+					"t" = {
+						"o" = ("insertText:", "🌯");
 					};
 				};
+			};
+		};
             };
         };
         "c" = {
